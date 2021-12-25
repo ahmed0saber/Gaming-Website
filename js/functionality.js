@@ -1,4 +1,4 @@
-/*     BUILD PROJECTS SECTION     */
+/*     BUILD GAMES SECTION     */
 fetch('data.json')
     .then(response => response.json())
     .then(data =>
@@ -18,11 +18,3 @@ fetch('data.json')
             }
         }
     );
-/*     SEND TO WHATSAPP     */
-function send(){
-    var name = document.getElementById("name").value;
-    var msg = document.getElementById("msg").value;
-    window.open("https://api.whatsapp.com/send?phone=+201208611892&text=Hi, Ahmed! My name is "+name+", I want to tell you that '"+msg+"'");
-    document.getElementById("name").value = "";
-    document.getElementById("msg").value = "";
-}
