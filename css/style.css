@@ -1,0 +1,32 @@
+*{
+    font-family: "Bree Serif",sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar{
+    padding: 8px 12px;
+}
+.navbar-brand{
+    font-size: 22px;
+}
+.navbar-text a, footer a{
+    text-decoration: none;
+}
+.hidden{
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+.project-container{
+    background-color: #DEE2E6;
+    padding: 1px;
+}
+.project{
+    min-height: 300px;
+    transition-duration: 0.4s;
+    background: #f2f2f2 no-repeat left top;
+    background-size: cover;
+}
+.project:hover .hidden{
+    opacity: 1;
+}
